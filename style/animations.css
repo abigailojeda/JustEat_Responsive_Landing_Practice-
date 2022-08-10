@@ -1,0 +1,52 @@
+
+/*food types check*/
+.food__types--img--item p{
+    margin-left: 0;
+    transition: margin-left 0.6s;
+}
+.food__types--img--item:hover p{
+    margin-left: 18px;
+    position: relative;
+}
+.food__types--img--item:hover p::before{
+        content:'✓';
+        color: --gray-text;
+        position: absolute;
+        left: -14px;
+}
+
+/*categories check*/
+
+.categories__list button p{
+    margin-left: 0;
+    transition: margin-left 0.6s;
+}
+
+.categories__list button:hover p{
+    margin-left: 18px;
+    position: relative;
+}
+.categories__list button:hover p:first-child::before{
+   content:'✓';
+   color: --gray-text;
+   position: absolute;
+   left: -14px;
+}
+
+/*header onInit*/
+
+/* @keyframes init {
+    0%{
+        transform: translateY(35px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.food__info, .food__info--search{
+    animation: init 0.6s;
+    animation-delay: 2s;
+} */
